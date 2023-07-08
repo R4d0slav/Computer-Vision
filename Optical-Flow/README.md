@@ -1,5 +1,4 @@
-\centering
-<h1>Optical Flow</h1>
+<center><h1>Optical Flow</h1></center>
 
 <b>Optical flow</b> is a fundamental concept in computer vision that aims to estimate the motion of objects within a sequence of images or a video. It provides a dense representation of the motion field by assigning a velocity vector to each pixel in an image, indicating the direction and magnitude of its movement over time. Optical flow has various applications in computer vision, including motion tracking, object detection and recognition, video stabilization, and autonomous navigation systems.
 
