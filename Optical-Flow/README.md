@@ -14,6 +14,17 @@ where N denotes the neighborhood of the pixel (usually a 3×3 pixel region), $I_
 $$ D = \sum_N{I^2_x} \sum_N{I^2_y} - (\sum_N{I_xI_y})^2. $$
 
 On the other hand, the <b>Horn-Schunck</b> algorithm is a global method that imposes smoothness constraints on the motion field. It assumes that neighboring pixels have similar motion and solves a partial differential equation to obtain a smooth motion field across the entire image. This algorithm provides a dense optical flow estimation by propagating the motion constraints globally.
+For given input images $I_1$ and $I_2$ the resulting formulas for displacement vectors u and v are defined iteratively as:
+
+$$ u = u_a - I_x \frac{P}{D}, v = v_a - I_y \frac{P}{D}, $$
+
+where the $u_a$ and $v_a$ are the iterative corrections to the displacement estimate, defined by convolving the corresponding component with a "residual Laplacian kernel"
+
+$$ u_a = u * L_d, v_a = v * L_d, L_d = \begin{matrix}
+0 & \frac{1}{4} & 0 \\
+\frac{1}{4} & 0 & \frac{1}{4} \\
+0 & \frac{1}{4} & 0 
+\end{matrix}.$$
 
 Both the Lucas-Kanade and Horn-Schunck methods have their strengths and weaknesses. The Lucas-Kanade algorithm is computationally efficient and performs well in scenarios with small displacements, making it suitable for real-time applications. However, it may struggle with large displacements and fails to handle occlusions and textureless regions effectively. On the other hand, the Horn-Schunck algorithm is more robust to noise and can handle larger displacements, but it is computationally expensive and may produce oversmoothed results.
 
