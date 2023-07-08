@@ -18,7 +18,7 @@ For given input images $I_1$ and $I_2$ the resulting formulas for displacement v
 
 $$ u = u_a - I_x \frac{P}{D}, \quad v = v_a - I_y \frac{P}{D}, $$
 
-where the $u_a$ and $v_a$ are the iterative corrections to the displacement estimate, defined by convolving the corresponding component with a "residual Laplacian kernel"
+where the $u_a$ and $v_a$ are the iterative corrections to the displacement estimate, defined by convolving the corresponding component with a "residual Laplacian kernel":
 
 $$ u_a = u \cdot L_d, \quad v_a = v \cdot L_d, \quad L_d = \begin{bmatrix}
 0 & \frac{1}{4} & 0 \\
@@ -26,6 +26,12 @@ $$ u_a = u \cdot L_d, \quad v_a = v \cdot L_d, \quad L_d = \begin{bmatrix}
 0 & \frac{1}{4} & 0 
 \end{bmatrix}.
 $$
+
+The $I_x$ and $I_y$ denote the pixel-wise average image derivatives for the first and the second image in x and y direction and the <i>P</i> and <i>D</i> terms are defined as:
+
+$$ P = I_xu_a + I_yv_a + I_t, \quad D = \lambda + I^2_x + I^2_y, $$
+
+where $I_t$ denotes the time derivative $I_2-I_1$. The initial estimates for u and v are typically set to 0 and are then iteratively improved.
 
 Both the Lucas-Kanade and Horn-Schunck methods have their strengths and weaknesses. The Lucas-Kanade algorithm is computationally efficient and performs well in scenarios with small displacements, making it suitable for real-time applications. However, it may struggle with large displacements and fails to handle occlusions and textureless regions effectively. On the other hand, the Horn-Schunck algorithm is more robust to noise and can handle larger displacements, but it is computationally expensive and may produce oversmoothed results.
 
