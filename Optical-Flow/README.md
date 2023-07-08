@@ -10,6 +10,7 @@ The displacement vectors <i>u</i> and <i>v</i> for given input images $I_1$ and 
 $$ u = -\frac{\sum_N{I^2_y} \sum_N{I_xI_t} - \sum_N{I_xI_y} \sum_N{I_yI_t}}{D}, -\frac{\sum_N{I^2_x} \sum_N{I_yI_t} - \sum_N{I_xI_y} \sum_N{I_xI_t}}{D}, $$
 
 where N denotes the neighborhood of the pixel (usually a 3×3 pixel region), $I_x, I_y$ denote the two spatial derivatives (the pixel-wise average image derivatives of the first and the second image in x and y direction), and $I_t$ denotes the temporal derivative $I_2-I_1$. The D is the determinant of a covariance matrix that is defined as:
+
 $$ D = \sum_N{I^2_x} \sum_N{I^2_y} - (\sum_N{I_xI_y})^2. $$
 
 On the other hand, the <b>Horn-Schunck</b> algorithm is a global method that imposes smoothness constraints on the motion field. It assumes that neighboring pixels have similar motion and solves a partial differential equation to obtain a smooth motion field across the entire image. This algorithm provides a dense optical flow estimation by propagating the motion constraints globally.
