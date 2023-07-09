@@ -35,7 +35,10 @@ $$ P = I_xu_a + I_yv_a + I_t, \quad D = \lambda + I^2_x + I^2_y, $$
 where $I_t$ denotes the time derivative $I_2-I_1$. The initial estimates for u and v are typically set to 0 and are then iteratively improved.
 
 
-Both the Lucas-Kanade and Horn-Schunck methods have their strengths and weaknesses. The Lucas-Kanade algorithm is computationally efficient and performs well in scenarios with small displacements, making it suitable for real-time applications. However, it may struggle with large displacements and fails to handle occlusions and textureless regions effectively. On the other hand, the Horn-Schunck algorithm is more robust to noise and can handle larger displacements, but it is computationally expensive and may produce oversmoothed results. Further modifications are introduced such as Pyramidial Lucas-Kanade and Horn-Schunck initialized with Lucas-Kanade output for improving overall performance. Bellow is an example of using Horn-Schunck optical flow with 1000 itterations and 0.5 $\lambda$.
+Both the Lucas-Kanade and Horn-Schunck methods have their strengths and weaknesses. The Lucas-Kanade algorithm is computationally efficient and performs well in scenarios with small displacements, making it suitable for real-time applications. However, it may struggle with large displacements and fails to handle occlusions and textureless regions effectively. On the other hand, the Horn-Schunck algorithm is more robust to noise and can handle larger displacements, but it is computationally expensive and may produce oversmoothed results. Further modifications are introduced such as Pyramidial Lucas-Kanade and Horn-Schunck initialized with Lucas-Kanade output for improving overall performance. 
+
+## Example
+Example of using Horn-Schunck optical flow with 1000 itterations and 0.5 $\lambda$.
 
 https://github.com/R4d0slav/Computer-Vision/assets/60989050/5abef732-afb8-4127-b27e-b7513e8aaa35
 
