@@ -23,9 +23,8 @@ The Mean-Shift tracking algorithm involves several mathematical formulations. Th
 1. <b>Target Model</b>: The target model is typically represented as a probability density function (PDF) based on color or feature information. The PDF is often estimated using techniques such as kernel density estimation (KDE) or histograms.
 2. <b>Weighted Mean-Shift</b>: The weighted mean-shift operation is used to calculate the new estimate of the object's position in each frame. It is defined as the weighted average of pixel locations within a search window, where the weights are based on the similarity between the target model (q) and the current frame (p).
 
-$$ x^{k+1} = \frac{\sum_{i=1}^n x_iw_i}{\sum_{i=1}^n w_i}, \quad w_i = \sqrt{\frac{q_{b(x_i)}}{p_{b(x_i)}}} $$
+$$ x^{k+1} = \frac{\sum_{i=1}^n(x_iw_i)}{\sum_{i=1}^n(w_i)}, \quad w_i = \sqrt{\frac{q_{b(x_i)}}{p_{b(x_i)}}} $$
 
-$$ \frac{\sum_{k=1}^n a_k b_k}{2} \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
 3. <b>Convergence Criteria</b>: Convergence is determined by evaluating the change in the estimated position between consecutive iterations. The Mean-Shift algorithm typically converges when the estimated position stabilizes within a certain threshold.
 
