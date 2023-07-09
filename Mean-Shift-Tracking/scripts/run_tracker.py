@@ -8,7 +8,7 @@ from ms_tracker import MeanShiftTracker, MSParams
 
 # set the path to directory where you have the sequences
 dataset_path = './vot2014' # set to the dataet path on your disk
-sequence = 'torus'  # choose the sequence you want to test
+sequence = 'jogging'  # choose the sequence you want to test
 
 # visualization and setup parameters
 win_name = 'Tracking window'
@@ -58,13 +58,14 @@ while frame_idx < sequence.length():
     sequence.draw_text(img, '%d/%d' % (frame_idx + 1, sequence.length()), (25, 25))
     sequence.draw_text(img, 'Fails: %d' % n_failures, (25, 55))
     sequence.show_image(img, video_delay)
+    # cv2.imwrite("sequence/frame"+str(frame_idx)+".png", img)
 
     if o > 0 or not reinitialize:
         # increase frame counter by 1
         frame_idx += 1
     else:
         # increase frame counter by 5 and set re-initialization to the next frame
-        frame_idx += 5
+        frame_idx += 1
         init_frame = frame_idx
         n_failures += 1
 

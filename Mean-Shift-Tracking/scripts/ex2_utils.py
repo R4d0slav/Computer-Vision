@@ -3,9 +3,14 @@ import math
 import numpy as np
 import cv2
 
-from ex1_utils import gausssmooth
 
-
+def gausssmooth(img, sigma):
+    x = np.array(list(range(math.floor(-3.0 * sigma + 0.5), math.floor(3.0 * sigma + 0.5) + 1)))
+    G = np.exp(-x**2 / (2 * sigma**2))
+    G = G / np.sum(G)
+    return cv2.sepFilter2D(img, -1, G, G)
+    
+    
 def generate_responses_1():
     responses = np.zeros((100, 100), dtype=np.float32)
     responses[70, 50] = 1
