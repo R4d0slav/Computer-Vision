@@ -30,6 +30,8 @@ $$\large x^{k+1} = \frac{{\sum_{i=1..n} x_iw_i}}{\sum_{i=1..n} w_i}, \quad w_i =
 ## Example
 Using the Mean-Shift Tracker on sequence "torus" from http://box.vicos.si/vot/vot2014.zip. 
 
-https://github.com/R4d0slav/Computer-Vision/assets/60989050/66729e5e-23f5-4aa5-a973-a255a063040d
+
+https://github.com/R4d0slav/Computer-Vision/assets/60989050/4534d0a4-62f0-45d4-b10e-4ab9bcc63b73
+
 
 
