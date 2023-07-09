@@ -27,3 +27,9 @@ $$\large x^{k+1} = \frac{{\sum_{i=1..n} x_iw_i}}{\sum_{i=1..n} w_i}, \quad w_i =
 
 3. <b>Convergence Criteria</b>: Convergence is determined by evaluating the change in the estimated position between consecutive iterations. The Mean-Shift algorithm typically converges when the estimated position stabilizes within a certain threshold.
 
+
+
+
+https://github.com/R4d0slav/Computer-Vision/assets/60989050/66729e5e-23f5-4aa5-a973-a255a063040d
+
+
