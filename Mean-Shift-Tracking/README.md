@@ -25,5 +25,9 @@ The Mean-Shift tracking algorithm involves several mathematical formulations. Th
 
 $$\large x^{k+1} = \frac{\sum_{i=1}^n x_iw_i}{\sum_{i=1}^n w_i}, \quad w_i = \sqrt{\frac{q_{b(x_i)}}{p_{b(x_i)}}} $$
 
+\[
+\frac{1}{2} \sum_{i=1}^{n} x_i
+\]
+
 3. <b>Convergence Criteria</b>: Convergence is determined by evaluating the change in the estimated position between consecutive iterations. The Mean-Shift algorithm typically converges when the estimated position stabilizes within a certain threshold.
 
