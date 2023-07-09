@@ -25,7 +25,7 @@ The Mean-Shift tracking algorithm involves several mathematical formulations. Th
 
 $$\Large x^{k+1} = \frac{\sum_{i=1}^n x_iw_i}{\sum_{i=1}^n w_i}, \quad w_i = \sqrt{\frac{q_{b(x_i)}}{p_{b(x_i)}}} $$
 
-$$\frac{\sum_{i=1}^{n} x_i}{2}$$
+$$\frac{{\sum_{{i=1}}^{n} x_i}}{2}$$
 
 
 
