@@ -7,17 +7,17 @@ The main idea behind correlation filters is to learn the filter so that it has h
 
 $$ \hat{\overline{H}} = \frac{\hat{G} \odot \hat{\overline{F}}}{\hat{F} \odot \hat{\overline{F}} + \lambda}, $$
 
-where G is a 2-dimensional Gaussian function and F is feature patch (i.e., grayscale image patch centered at object location). Operation $\odot$ is a point-wise product, division is also calculated element-wise and the $\overline{}$ denotes complex-conjugate operator. Note that the $\hat$ represents variable in Fourier domain i.e., $\hat{a} = \mathcal{F}(a)$. Fourier transform must be performed in 2-dimensions e.g., numpy.fft.fft2.
+where G is a 2-dimensional Gaussian function and F is feature patch (i.e., grayscale image patch centered at object location). Operation $\odot$ is a point-wise product, division is also calculated element-wise and the $\overline{\phantom{H}}$ denotes complex-conjugate operator. Note that the $\hat{\phantom{H}}$ represents variable in Fourier domain i.e., $\hat{a} = \mathcal{F}(a)$. Fourier transform must be performed in 2-dimensions e.g., numpy.fft.fft2.
 
 After the filter has been constructed it can be used to localize the target (i.e., t = 2, 3, 4, ...). The localization step is implemented using equation:
 
-$$ R = \mathcal{F}^{-1}(\hat{\{overline{H}}} \odot \hat{F}), $$
+$$ R = \mathcal{F}^{-1}(\hat{\overline{H}} \odot \hat{F}), $$
 
 where R represents 2-dimensional correlation response and new target location is defined as position of the maximum peak in the response and $\mathcal{F}^{-1}$ is the inverse Fourier transform.
 
 Using constant filter H does not model the target well, especially when it is changing its appearance. That is the reason for online update of the filter and it is typically realized as exponential forgetting:
 
-$$ \hat{\overline{H}}_t = (1-\alpha)\hat{\overline{H}}_{t-1} + \alpha\hat{\overline{\tilde{H}}}. $$
+$$ \hat{\overline{H}}_{t} = (1-\alpha)\hat{\overline{H}}_{t-1} + \alpha\hat{\overline{\tilde{H}}}. $$
 
 The updated filter at frame t is denoted as $\hat{\overline{H}}_t$ and the filter from previous frame is denoted as $\hat{\overline{H}}_{t-1}$. Filter at the current frame, obtained with the first equation is denoted
 as \hat{\overline{\tilde{H}}}. Also, an important parameter here is the update speed $\alpha$ (typically a low number i.e., 0.02, 0.1, ...).
