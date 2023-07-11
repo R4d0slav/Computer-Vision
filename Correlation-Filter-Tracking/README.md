@@ -18,7 +18,7 @@ where R represents 2-dimensional correlation response and new target location is
 
 Using constant filter H does not model the target well, especially when it is changing its appearance. That is the reason for online update of the filter and it is typically realized as exponential forgetting:
 
-$$ \hat{\bar{H}} _{t} = (1-\alpha) \hat{\bar{H}}_{t-1} + \alpha \hat{\bar{\tilde{H}}}. $$
+$$ \hat{\bar{H}} {t} = (1-\alpha) \hat{\bar{H}}_{t-1} + \alpha \hat{\bar{\tilde{H}}}. $$
 
 The updated filter at frame t is denoted as $\hat{\bar{H}}_t$ and the filter from previous frame is denoted as $\hat{\bar{H}}_{t-1}$. Filter at the current frame, obtained with the first equation is denoted
 as \hat{\bar{\tilde{H}}}. Also, an important parameter here is the update speed $\alpha$ (typically a low number i.e., 0.02, 0.1, ...).
