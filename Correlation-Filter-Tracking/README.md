@@ -7,7 +7,7 @@ The main idea behind correlation filters is to learn the filter so that it has h
 
 $$ \hat{\overline{H}} = \frac{\hat{G} \odot \hat{\overline{F}}}{\hat{F} \odot \hat{\overline{F}} + \lambda}, $$
 
-where G is a 2-dimensional Gaussian function and F is feature patch (i.e., grayscale image patch centered at object location). Operation $\odot$ is a point-wise product, division is also calculated element-wise and the $\bar{}$ denotes complex-conjugate operator. Note that the $\hat{}$ represents variable in Fourier domain i.e., $\hat{a} = \mathcal{F}(a)$. Fourier transform must be performed in 2-dimensions e.g., numpy.fft.fft2.
+where G is a 2-dimensional Gaussian function and F is feature patch (i.e., grayscale image patch centered at object location). Operation $\odot$ is a point-wise product, division is also calculated element-wise and the ¯ denotes complex-conjugate operator. Note that the ^ represents variable in Fourier domain i.e., $\hat{a} = \mathcal{F}(a)$. Fourier transform must be performed in 2-dimensions e.g., numpy.fft.fft2.
 
 After the filter has been constructed it can be used to localize the target (i.e., t = 2, 3, 4, ...). The localization step is implemented using equation:
 
@@ -25,7 +25,7 @@ as \hat{\overline{\tilde{H}}}. Also, an important parameter here is the update s
 https://github.com/R4d0slav/Computer-Vision/assets/60989050/afac0f87-3b6c-4ef7-9e41-0202f3bc737a
 
 ## MOSSE
-The MOSSE Tracker is impelemnted from the original paper "https://ieeexplore.ieee.org/abstract/document/5539960/". The correlation filter is updated (and constructed) in a different way, where the numerator and denominator of the filter are stored separately. Also, the localization step is implemented differently, too.
+The MOSSE Tracker is impelemnted from the original paper https://ieeexplore.ieee.org/abstract/document/5539960/. The correlation filter is updated (and constructed) in a different way, where the numerator and denominator of the filter are stored separately. Also, the localization step is implemented differently, too.
 
 https://github.com/R4d0slav/Computer-Vision/assets/60989050/37b805a6-0ddf-4c35-b490-31427ce7f0d0
 
