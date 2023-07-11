@@ -20,7 +20,7 @@ Using constant filter H does not model the target well, especially when it is ch
 
 $$ \hat{\bar{H_t}} = (1-\alpha) \hat{\bar{H}}_{t-1} + \alpha \hat{\bar{\tilde{H}}}. $$
 
-The updated filter at frame t is denoted as $\hat{\bar{H}}_t$ and the filter from previous frame is denoted as $\hat{\bar{H}}_{t-1}$. Filter at the current frame, obtained with the first equation is denoted
+The updated filter at frame t is denoted as $\hat{\bar{H_t}}$ and the filter from previous frame is denoted as $\hat{\bar{H}}_{t-1}$. Filter at the current frame, obtained with the first equation is denoted
 as \hat{\bar{\tilde{H}}}. Also, an important parameter here is the update speed $\alpha$ (typically a low number i.e., 0.02, 0.1, ...).
 
 https://github.com/R4d0slav/Computer-Vision/assets/60989050/afac0f87-3b6c-4ef7-9e41-0202f3bc737a
