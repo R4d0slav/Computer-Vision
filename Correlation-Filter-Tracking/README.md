@@ -23,10 +23,12 @@ $$ \hat{\bar{H_t}} = (1-\alpha) \hat{\bar{H}}_{t-1} + \alpha \hat{\bar{\tilde{H}
 The updated filter at frame t is denoted as $\hat{\bar{H_t}}$ and the filter from previous frame is denoted as $\hat{\bar{H}}_{t-1}$. Filter at the current frame, obtained with the first equation is denoted
 as $\hat{\bar{\tilde{H}}}$. Also, an important parameter here is the update speed $\alpha$ (typically a low number i.e., 0.02, 0.1, ...).
 
-https://github.com/R4d0slav/Computer-Vision/assets/60989050/afac0f87-3b6c-4ef7-9e41-0202f3bc737a
+https://github.com/R4d0slav/Computer-Vision/assets/60989050/a2664709-1493-43c6-9fe9-fb573158ef42
+
 
 ## MOSSE
 The MOSSE Tracker is impelemnted from the original paper https://ieeexplore.ieee.org/abstract/document/5539960/. The correlation filter is updated (and constructed) in a different way, where the numerator and denominator of the filter are stored separately. Also, the localization step is implemented differently, too.
 
-https://github.com/R4d0slav/Computer-Vision/assets/60989050/37b805a6-0ddf-4c35-b490-31427ce7f0d0
+https://github.com/R4d0slav/Computer-Vision/assets/60989050/0aab82ed-bba5-47c6-ac00-ed1d3bf44a15
+
 
