@@ -14,8 +14,8 @@ $$
 X_{state} = \begin{bmatrix}
     x\\
     y\\
-    \Dot{x}\\
-    \Dot{y}
+    \dot{x}\\
+    \dot{y}
 \end{bmatrix}
 F = \begin{bmatrix}
     0 & 0 & 1 & 0 \\
