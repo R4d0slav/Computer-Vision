@@ -179,11 +179,17 @@ This way multiple similarly important states can be maintained for a shorter per
 
 <b>Update at frame <i>t</i></b>:
 - Replace existing particles by sampling n new particles based on weight distribution of the old particles.
+  
   $$ p(x_{k-1}|y_{1:k-1}) \approx {\tilde{x_{k-1}^{(i)}}, \frac{1}{N}} $$
+
 - Move each particle using the dynamic model (also apply noise).
+
   $$ x_k^{(i)} = \phi x_{k-1}^{(i)} + w_k_{(i)}, \quad w_k^{(i)} \sim N(\cdot|0;Q) $$
+
 - Update weights of particles based on visual model similarity.
+
   $$ w^{(i)} p(y_k^{(i)}) | x_k^{(i)}, \quad p(y_k^{(i)}) | x_k^{(i)} = e^{-\frac{1}{2}dist(y_k^{(i)}, h_{ref})^2/\sigma^2} $$
+
 - Compute new state of the object as a weighted sum of particle states. Use the normalized particle weights as weights in the sum.
 
 
