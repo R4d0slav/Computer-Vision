@@ -114,6 +114,7 @@ $$
 - The NCA model is suitable for scenarios where the object's motion can be approximated as nearly constant acceleration with minor variations.
 
 $$
+\tiny{
 \begin{align*}
 X_{state} = \begin{bmatrix}
     x\\
@@ -160,6 +161,7 @@ H = \begin{bmatrix}
     0 & 1 & 0 & 0 & 0 & 0
 \end{bmatrix}
 \end{align*}
+}
 $$
 
 https://github.com/R4d0slav/Computer-Vision/assets/60989050/fd9d51c1-1934-400b-9c6b-f45489a18404
