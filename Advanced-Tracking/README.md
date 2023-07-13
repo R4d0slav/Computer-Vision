@@ -66,6 +66,7 @@ $$
 - The NCV model is suitable for scenarios where the object's motion can be approximated as nearly constant velocity with minor variations.
 
 $$
+\small
 \begin{align*}
 X_{state} = \begin{bmatrix}
     x\\
@@ -122,6 +123,22 @@ X_{state} = \begin{bmatrix}
     \ddot{x}\\
     \ddot{y}
 \end{bmatrix}
+F = \begin{bmatrix}
+    0 & 0 & 1 & 0 & 0 & 0\\
+    0 & 0 & 0 & 1 & 0 & 0\\
+    0 & 0 & 0 & 0 & 1 & 0\\
+    0 & 0 & 0 & 0 & 0 & 1\\
+    0 & 0 & 0 & 0 & 0 & 0\\
+    0 & 0 & 0 & 0 & 0 & 0
+\end{bmatrix}
+\phi = \begin{bmatrix}
+    1 & 0 & \Delta T & 0 & \frac{\Delta T^2}{2} & 0\\
+    0 & 1 & 0 & \Delta T & 0 & \frac{\Delta T^2}{2}\\
+    0 & 0 & 1 & 0 & \Delta T & 0\\
+    0 & 0 & 0 & 1 & 0 & \Delta T\\
+    0 & 0 & 0 & 0 & 1 & 0\\
+    0 & 0 & 0 & 0 & 0 & 1
+\end{bmatrix}
 L = \begin{bmatrix}
     0 & 0 \\
     0 & 0 \\
@@ -138,26 +155,9 @@ Q = \begin{bmatrix}
     \frac{\Delta T q}{2} & 0 & \Delta T q & 0 & \Delta T q & 0 \\
     0 & \frac{\Delta T q}{2} & 0 & \Delta T q & 0 & \Delta T q
 \end{bmatrix}
-\\
 H = \begin{bmatrix}
     1 & 0 & 0 & 0 & 0 & 0 \\
     0 & 1 & 0 & 0 & 0 & 0
-\end{bmatrix}
-F = \begin{bmatrix}
-    0 & 0 & 1 & 0 & 0 & 0\\
-    0 & 0 & 0 & 1 & 0 & 0\\
-    0 & 0 & 0 & 0 & 1 & 0\\
-    0 & 0 & 0 & 0 & 0 & 1\\
-    0 & 0 & 0 & 0 & 0 & 0\\
-    0 & 0 & 0 & 0 & 0 & 0
-\end{bmatrix}
-\phi = \begin{bmatrix}
-    1 & 0 & \Delta T & 0 & \frac{\Delta T^2}{2} & 0\\
-    0 & 1 & 0 & \Delta T & 0 & \frac{\Delta T^2}{2}\\
-    0 & 0 & 1 & 0 & \Delta T & 0\\
-    0 & 0 & 0 & 1 & 0 & \Delta T\\
-    0 & 0 & 0 & 0 & 1 & 0\\
-    0 & 0 & 0 & 0 & 0 & 1
 \end{bmatrix}
 \end{align*}
 $$
