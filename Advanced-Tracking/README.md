@@ -130,14 +130,6 @@ L = \begin{bmatrix}
     1 & 0 \\
     0 & 1
 \end{bmatrix}
-F = \begin{bmatrix}
-    0 & 0 & 1 & 0 & 0 & 0\\
-    0 & 0 & 0 & 1 & 0 & 0\\
-    0 & 0 & 0 & 0 & 1 & 0\\
-    0 & 0 & 0 & 0 & 0 & 1\\
-    0 & 0 & 0 & 0 & 0 & 0\\
-    0 & 0 & 0 & 0 & 0 & 0
-\end{bmatrix}
 Q = \begin{bmatrix}
     \frac{\Delta T q}{4} & 0 & \frac{\Delta T q}{2} & 0 & \frac{\Delta T q}{2} & 0 \\
     0 & \frac{\Delta T q}{4} & 0 & \frac{\Delta T q}{2} & 0 & \frac{\Delta T q}{2} \\
@@ -150,6 +142,14 @@ Q = \begin{bmatrix}
 H = \begin{bmatrix}
     1 & 0 & 0 & 0 & 0 & 0 \\
     0 & 1 & 0 & 0 & 0 & 0
+\end{bmatrix}
+F = \begin{bmatrix}
+    0 & 0 & 1 & 0 & 0 & 0\\
+    0 & 0 & 0 & 1 & 0 & 0\\
+    0 & 0 & 0 & 0 & 1 & 0\\
+    0 & 0 & 0 & 0 & 0 & 1\\
+    0 & 0 & 0 & 0 & 0 & 0\\
+    0 & 0 & 0 & 0 & 0 & 0
 \end{bmatrix}
 \phi = \begin{bmatrix}
     1 & 0 & \Delta T & 0 & \frac{\Delta T^2}{2} & 0\\
