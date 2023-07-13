@@ -70,8 +70,8 @@ $$
 X_{state} = \begin{bmatrix}
     x\\
     y\\
-    \Dot{x}\\
-    \Dot{y}
+    \dot{x}\\
+    \dot{y}
 \end{bmatrix}
 F = \begin{bmatrix}
     0 & 0 & 1 & 0 \\
@@ -117,14 +117,10 @@ $$
 X_{state} = \begin{bmatrix}
     x\\
     y\\
-    \Dot{x}\\
-    \Dot{y}\\
+    \dot{x}\\
+    \dot{y}\\
     \ddot{x}\\
     \ddot{y}
-\end{bmatrix}
-H = \begin{bmatrix}
-    1 & 0 & 0 & 0 & 0 & 0 \\
-    0 & 1 & 0 & 0 & 0 & 0
 \end{bmatrix}
 L = \begin{bmatrix}
     0 & 0 \\
@@ -157,6 +153,11 @@ Q = \begin{bmatrix}
     0 & \frac{\Delta T q}{2} & 0 & \Delta T q & 0 & \Delta T q \\
     \frac{\Delta T q}{2} & 0 & \Delta T q & 0 & \Delta T q & 0 \\
     0 & \frac{\Delta T q}{2} & 0 & \Delta T q & 0 & \Delta T q
+\end{bmatrix}
+\\
+H = \begin{bmatrix}
+    1 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 & 0 & 0
 \end{bmatrix}
 \end{align*}
 $$
