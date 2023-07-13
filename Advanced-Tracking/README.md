@@ -18,6 +18,7 @@ By iteratively resampling and updating the particles, the particle filter conver
 - The RW model is suitable for scenarios where the object's motion does not exhibit a clear pattern or follows random movements.
 
 $$
+\tiny{
 \begin{align*}
 X_{state} = \begin{bmatrix}
     x\\
@@ -54,6 +55,7 @@ Q = \begin{bmatrix}
     0 & \Delta T q & 0 & \Delta T q
 \end{bmatrix}
 \end{align*}
+}
 $$
 
 
@@ -66,7 +68,7 @@ $$
 - The NCV model is suitable for scenarios where the object's motion can be approximated as nearly constant velocity with minor variations.
 
 $$
-\small
+\tiny{
 \begin{align*}
 X_{state} = \begin{bmatrix}
     x\\
@@ -103,6 +105,7 @@ Q = \begin{bmatrix}
     0 & \Delta T q & 0 & \Delta T q
 \end{bmatrix}
 \end{align*}
+}
 $$
   
 <b>Nearly Constant Acceleration (NCA) Model</b>:
