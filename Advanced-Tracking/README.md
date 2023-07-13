@@ -167,5 +167,24 @@ H = \begin{bmatrix}
 }
 $$
 
+## Particle Filter
+Tracking with a particle filter can be viewed at as a fusion of cross-entropy stochastic optimization and motion models. 
+The basic idea is to transfer a set of particles (hypotheses) from one frame to another and not collapse them to a single state prediction. 
+In a new frame these particles are propagated using a motion model, evaluated for similarity using a visual model and re-sampled based on their similarity weights. 
+This way multiple similarly important states can be maintained for a shorter periods of time which helps to resolve some ambiguities.
+
+<b>Initialization</b>:
+- Construct a visual model of an object.
+- Generate n particles at the initial position (equal weights). At this point you can simply generate samples from a Gaussian distribution around the initial position.
+
+<b>Update at frame <i>t</i></b>:
+- Replace existing particles by sampling n new particles based on weight distribution of the old particles.
+- Move each particle using the dynamic model (also apply noise).
+- Update weights of particles based on visual model similarity.
+- Compute new state of the object as a weighted sum of particle states. Use the normalized particle weights as weights in the sum.
+
+
+
+
 https://github.com/R4d0slav/Computer-Vision/assets/60989050/fd9d51c1-1934-400b-9c6b-f45489a18404
 
