@@ -180,7 +180,7 @@ This way multiple similarly important states can be maintained for a shorter per
 <b>Update at frame <i>t</i></b>:
 - Replace existing particles by sampling n new particles based on weight distribution of the old particles.
 
-$$ p(x_{k-1} | y_{1:k-1}) \approx \{ \tilde{x_{k-1}^{(i)}}, \frac{1}{N} \} $$
+$$ p(x_{k-1} | y_{1:k-1}) \approx \left \{ \tilde{x}_{k-1}^{(i)}, \frac{1}{N} \right \} $$
 
 - Move each particle using the dynamic model (also apply noise).
 
