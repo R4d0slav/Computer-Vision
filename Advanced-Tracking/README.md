@@ -147,7 +147,7 @@ Q = \begin{bmatrix}
     0 & \frac{\Delta T q}{2} & 0 & \Delta T q & 0 & \Delta T q
 \end{bmatrix}
 \\
-& H = \begin{bmatrix}
+H = \begin{bmatrix}
     1 & 0 & 0 & 0 & 0 & 0 \\
     0 & 1 & 0 & 0 & 0 & 0
 \end{bmatrix}
