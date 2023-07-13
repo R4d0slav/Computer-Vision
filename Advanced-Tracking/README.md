@@ -192,7 +192,7 @@ $$ w^{(i)} = p(y_k^{(i)} | x_k^{(i)}), \quad p(y_k^{(i)} | x_k^{(i)}) = e^{-\fra
 
 - Compute new state of the object as a weighted sum of particle states. Use the normalized particle weights as weights in the sum.
 
-
+## Example of using Particle Tracker with NCV motion model
 
 https://github.com/R4d0slav/Computer-Vision/assets/60989050/fd9d51c1-1934-400b-9c6b-f45489a18404
 
