@@ -35,15 +35,15 @@ L = \begin{bmatrix}
     1 & 0 \\
     0 & 1
 \end{bmatrix}
+H = \begin{bmatrix}
+    1 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0
+\end{bmatrix}
 Q = \begin{bmatrix}
     \Delta T q & 0 & \Delta T q & 0 \\
     0 & \Delta T q & 0 & \Delta T q \\
     \Delta T q & 0 & \Delta T q & 0 \\
     0 & \Delta T q & 0 & \Delta T q
-\end{bmatrix}
-H = \begin{bmatrix}
-    1 & 0 & 0 & 0 \\
-    0 & 1 & 0 & 0
 \end{bmatrix}
 \end{align*}
 $$
