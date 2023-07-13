@@ -9,7 +9,7 @@ These particles are propagated through time according to a <b>motion model</b>, 
 By iteratively resampling and updating the particles, the particle filter converges to an accurate representation of the object's state.
 
 ## Motion models
-
+$$
 \begin{align*}
 X_{state} = \begin{bmatrix}
     x\\
@@ -48,7 +48,7 @@ H = \begin{bmatrix}
     0 & 1 & 0 & 0
 \end{bmatrix}
 \end{align*}
-
+$$
 
 
 
