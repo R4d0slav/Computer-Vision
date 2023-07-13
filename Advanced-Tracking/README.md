@@ -29,13 +29,13 @@ F = \begin{bmatrix}
     0 & 0 & 1 & 0\\
     0 & 0 & 0 & 1
 \end{bmatrix}
-\\
 L = \begin{bmatrix}
     0 & 0 \\
     0 & 0 \\
     1 & 0 \\
     0 & 1
 \end{bmatrix}
+\\
 Q = \begin{bmatrix}
     \Delta T q & 0 & \Delta T q & 0 \\
     0 & \Delta T q & 0 & \Delta T q \\
