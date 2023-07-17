@@ -16,7 +16,7 @@ https://github.com/R4d0slav/Computer-Vision/assets/60989050/5abef732-afb8-4127-b
 
 Mean-shift tracking is a non-parametric technique used for object tracking in computer vision. It involves locating an object in a video sequence by iteratively shifting a window's centroid towards the mode of the probability distribution of pixel intensities within that window. Mean-shift tracking is robust to variations in appearance, making it suitable for tracking objects with changing lighting conditions or occlusions.
 
-Using the Mean-Shift Tracker on sequence "torus" from http://box.vicos.si/vot/vot2014.zip. 
+https://github.com/R4d0slav/Computer-Vision/assets/60989050/4534d0a4-62f0-45d4-b10e-4ab9bcc63b73
 
 
 ## Discriminative Tracking (Correlation Filters)
