@@ -9,6 +9,9 @@ Two approaches for optical-flow are implemented:
 - <b>Lucas-Kanade</b>
 - <b>Horn-Schunck</b>
 
+https://github.com/R4d0slav/Computer-Vision/assets/60989050/5abef732-afb8-4127-b27e-b7513e8aaa35
+
+
 ## Mean-Shift Tracking
 
 Mean-shift tracking is a non-parametric technique used for object tracking in computer vision. It involves locating an object in a video sequence by iteratively shifting a window's centroid towards the mode of the probability distribution of pixel intensities within that window. Mean-shift tracking is robust to variations in appearance, making it suitable for tracking objects with changing lighting conditions or occlusions.
