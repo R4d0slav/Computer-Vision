@@ -15,22 +15,19 @@ During the re-detection phase, additional techniques and algorithms are leverage
 By reintroducing the target in the subsequent frames, its persistence is ensured and the recovery of accurate tracking is facilitated even after prolonged occlusions or drastic appearance changes.
 
 ## How to use
-Running the tracker od a dataset:
+- Run the tracker on a dataset:
 ```bash
 python run_tracker.py −−dataset <path/to/dataset> −−net <path/to/network> −−results_dir <path/to/results/directory>
 ```
-
-Run evaluation:
+- Run evaluation:
 ```bash
 python performance_evaluation.py −−dataset <path/to/dataset> −−results_dir <path/to/results/directory>
 ```
-
-Show tracking results:
+- Show tracking results:
 ```bash
 python show_tracking.py --dataset <path/to/dataset> --results_dir <path/to/results/directory> --sequence <name/of/sequence>
 ```
 
 ## Example of long-term SiamFC
-
 
 https://github.com/R4d0slav/Computer-Vision/assets/60989050/a61f302e-f163-470b-9d2b-81be4730638a
