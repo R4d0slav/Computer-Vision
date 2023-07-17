@@ -18,17 +18,17 @@ By reintroducing the target in the subsequent frames, its persistence is ensured
 Running the tracker od a dataset:
 ```bash
 python run_tracker.py −−dataset <path/to/dataset> −−net <path/to/network> −−results_dir <path/to/results/directory>
-
+```
 
 Run evaluation:
 ```bash
 python performance_evaluation.py −−dataset <path/to/dataset> −−results_dir <path/to/results/directory>
-
+```
 
 Show tracking results:
 ```bash
 python show_tracking.py --dataset <path/to/dataset> --results_dir <path/to/results/directory> --sequence <name/of/sequence>
-
+```
 
 ## Example of long-term SiamFC
 
