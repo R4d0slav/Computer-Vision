@@ -1,6 +1,6 @@
 # Computer Vision
 
-This repository contains implementations of various computer vision tasks. Each task focuses on a specific aspect of computer vision, and the code provided can serve as a starting point for further research or development in the field. Below, a brief explanation of each task and its basic meaning is provided.
+This repository contains implementations of various computer vision tasks, primarily optical flow estimation and object tracking. The emphasis is more on object tracking, where different tracking methods are implemented, starting from basic short-term trackers, to more advanced trainable long-term trackers. The code provided can serve as a starting point for further research or development in the field. Below, a brief explanation of each task and its basic meaning is provided. A more detaied information can be seen in the appropriate task directories.
 
 ## Optical Flow
 
