@@ -16,17 +16,29 @@ https://github.com/R4d0slav/Computer-Vision/assets/60989050/5abef732-afb8-4127-b
 
 Mean-shift tracking is a non-parametric technique used for object tracking in computer vision. It involves locating an object in a video sequence by iteratively shifting a window's centroid towards the mode of the probability distribution of pixel intensities within that window. Mean-shift tracking is robust to variations in appearance, making it suitable for tracking objects with changing lighting conditions or occlusions.
 
+Using the Mean-Shift Tracker on sequence "torus" from http://box.vicos.si/vot/vot2014.zip. 
+
+
 ## Discriminative Tracking (Correlation Filters)
 
 Discriminative tracking using <b>correlation filters</b> is a popular technique for object tracking. It formulates the tracking problem as a discriminative classification task, where a classifier is trained to distinguish between the target object and the background. By correlating the classifier's response with the target template in a new frame, the tracker can estimate the target's position accurately.
+
+https://github.com/R4d0slav/Computer-Vision/assets/60989050/0aab82ed-bba5-47c6-ac00-ed1d3bf44a15
+
 
 ## Advanced Tracking (Particle Filters)
 
 Advanced tracking techniques, such as particle filters, are probabilistic methods used for tracking objects in videos. <b>Particle filters</b> represent the object's state using a set of particles, each associated with a probability weight. These particles are propagated and updated over time based on a motion model and observations from the video frames, allowing for robust and accurate tracking even in challenging scenarios with occlusions and appearance changes.
 
+https://github.com/R4d0slav/Computer-Vision/assets/60989050/fd9d51c1-1934-400b-9c6b-f45489a18404
+
+
 ## Long-Term Tracking (SiamFC with Re-detection)
 
 Long-term tracking refers to the ability to track objects across extended periods of time, even when they temporarily disappear from the camera's view. <b>SiamFC</b> (Siam Fully Convolutional) is a popular long-term tracking approach that employs a siamese network to learn a similarity measure between the target object and candidate regions in subsequent frames. <b>Re-detection</b> mechanisms are used to handle object reappearances, enabling the tracker to maintain accurate tracking over long durations.
+
+https://github.com/R4d0slav/Computer-Vision/assets/60989050/a61f302e-f163-470b-9d2b-81be4730638a
+
 
 ## Getting Started
 
