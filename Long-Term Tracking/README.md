@@ -5,6 +5,7 @@ While traditional trackers perform well in short-term scenarios, they often stru
 
 Long-term tracking, addresses the limitations of conventional trackers by introducing a novel approach that incorporates a re-detection phase. Specifically, SiamFC tracker is implemented and its capabilities enhanced to ensure robustness and persistence in tracking even under adverse conditions.
 
+## SiamFC
 <b>SiamFC</b>, short for Siamese Fully Convolutional Network, is a state-of-the-art tracker known for its exceptional performance in short-term tracking scenarios. 
 It operates by learning a discriminative model that effectively matches the appearance of the target against a search region within subsequent frames. 
 However, like many other trackers, SiamFC encounters difficulties in maintaining tracking accuracy when faced with long-term challenges, such as target disappearance or a significant drop in confidence levels.
