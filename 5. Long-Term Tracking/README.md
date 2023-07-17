@@ -10,7 +10,7 @@ Long-term tracking, addresses the limitations of conventional trackers by introd
 It operates by learning a discriminative model that effectively matches the appearance of the target against a search region within subsequent frames. 
 However, like many other trackers, SiamFC encounters difficulties in maintaining tracking accuracy when faced with long-term challenges, such as target disappearance or a significant drop in confidence levels.
 
-To overcome these challenges, the functionality of the SiamFC tracker is extended by incorporating a re-detection phase. 
+To overcome these challenges, the functionality of the SiamFC tracker is extended by incorporating a <b>re-detection</b> phase. 
 This phase triggers when the target disappears or when the tracker's confidence drops below a predefined threshold. 
 During the re-detection phase, additional techniques and algorithms are leveraged to re-establish accurate tracking. 
 By reintroducing the target in the subsequent frames, its persistence is ensured and the recovery of accurate tracking is facilitated even after prolonged occlusions or drastic appearance changes.
